@@ -1,0 +1,31 @@
+<html><head></head><body class="w3-white">
+    <!-- Cover -->
+    <div id="cover" onclick="OnEnter()">
+        <p id="cover-text">click to enter.</p>
+    </div>
+
+    <!-- Content container -->
+    <div class="content-container">
+        <video id="myVideo" controls="" loop="" autoplay="">
+            <source src="https://cdn.discordapp.com/attachments/846827486481743908/1191565268745453588/i_be_poppin_bottles_sparkles_and_champagne.mp4?ex=65a5e6a2&amp;is=659371a2&amp;hm=52a7a30171ca2f264c414dfde7667ad791e2c1ffa17db620c9d6759cea706f9b&amp;" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>I BE POPPIN🔥</p>
+    </div>
+
+    <script>
+        function OnEnter() {
+            var cover = document.getElementById('cover');
+            var contentContainer = document.querySelector('.content-container');
+
+            // Hide the cover
+            cover.style.display = 'none';
+
+            // Show the content container
+            contentContainer.style.display = 'block';
+        }
+    </script>
+
+
+
+</body></html>
