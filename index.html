@@ -1,31 +1,32 @@
-<html><head></head><body class="w3-white">
-    <!-- Cover -->
-    <div id="cover" onclick="OnEnter()">
-        <p id="cover-text">click to enter.</p>
-    </div>
-
-    <!-- Content container -->
-    <div class="content-container">
-        <video id="myVideo" controls="" loop="" autoplay="">
-            <source src="https://cdn.discordapp.com/attachments/846827486481743908/1191565268745453588/i_be_poppin_bottles_sparkles_and_champagne.mp4?ex=65a5e6a2&amp;is=659371a2&amp;hm=52a7a30171ca2f264c414dfde7667ad791e2c1ffa17db620c9d6759cea706f9b&amp;" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p>I BE POPPIN🔥</p>
-    </div>
-
-    <script>
-        function OnEnter() {
-            var cover = document.getElementById('cover');
-            var contentContainer = document.querySelector('.content-container');
-
-            // Hide the cover
-            cover.style.display = 'none';
-
-            // Show the content container
-            contentContainer.style.display = 'block';
-        }
-    </script>
-
-
-
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>a</title>
+<link rel="icon" href="https://cdn.discordapp.com/avatars/78338967546.webp?size=1024&format=webp&width=0&height=256" type="image/x-icon">
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-image: url('https://cdn.discordapp.com/avatars/783389675461148722/e0949ae3f8cdb98b6475c6b93f44dcc9.webp?size=1024&format=webp&width=0&height=256');
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #video-background {
+        width: 90%; /* Adjust width */
+        max-width: 1200px;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+<video id="video-background" autoplay loop controls width="1280" height="720"> <!-- Adjust width and height -->
+    <source src="https://cdn.discordapp.com/attachments/1117438101346848899/1223320018628907098/MOV_3208.mov?ex=66196c8c&is=6606f78c&hm=5ead5023c8667e8d35e7fd2da5ca09b206b85313acc997586d6733708aa1d7e6" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+</body>
+</html>
